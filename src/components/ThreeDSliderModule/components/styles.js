@@ -171,7 +171,7 @@ export const SlideTitle = styled(Typography)`
   }
 `;
 
-export const SlideBody = styled(Typography)`
+export const SlideBody = styled.div`
   margin-bottom: 18px;
   max-width: 150px;
   grid-column: 1/4;

@@ -49,19 +49,6 @@ const ThreeDSlider = ({ title, cta, popup, steps, show }) => {
     setActiveColor(active);
   };
 
-  // useEffect(() => {
-  //   const modelViewerColor = document.querySelector('model-viewer#model');
-  //   const material_0 = modelViewerColor?.model?.materials[0];
-  //   const material_1 = modelViewerColor?.model?.materials[1];
-  //
-  //   material_0?.pbrMetallicRoughness?.setBaseColorFactor(
-  //     convertHex(steps[active].hexColor)
-  //   );
-  //   material_1?.pbrMetallicRoughness?.setBaseColorFactor(
-  //     convertHex(steps[active].hexColor)
-  //   );
-  // }, [active, steps]);
-
   useEffect(() => {
     const modelViewerColor = document.querySelector('model-viewer#model');
     const material_0 = modelViewerColor?.model?.materials[0];
