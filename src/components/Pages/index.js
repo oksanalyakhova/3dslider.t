@@ -50,7 +50,7 @@ const PageLayout = (props) => {
   ]);
 
   return (
-    <div style={{ minHeight: '700px' }}>
+    <div style={{ minHeight: '700px', margin: 'auto 0' }}>
       {node?.modules?.map((component) => {
         switch (component.__typename) {
           case 'Contentful3DSliderModule':

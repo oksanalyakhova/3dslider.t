@@ -32,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
     > div {
        @media (max-width: ${theme.breakpoints.md}) {
         overflow: hidden;

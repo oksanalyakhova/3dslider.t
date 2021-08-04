@@ -42,7 +42,7 @@ const ThreeDTooltip = ({ ctaText, popupBody }) => {
   return (
     <TooltipWrapper className={isActive && 'has-active'} ref={tooltipRef}>
       <TooltipButton
-        onClick={isMobile && ToggleTooltip}
+        onClick={() => isMobile && ToggleTooltip()}
         onMouseEnter={() => !isMobile && mouseEnter()}
         onMouseLeave={() => !isMobile && mouseLeave()}
         className={isActive && 'is-active'}

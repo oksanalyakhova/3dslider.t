@@ -7,17 +7,11 @@ export const ThreeDWrapper = styled.div`
   margin: 0 auto;
   width: 100%;
   color: ${(props) => props.theme.colors.white};
-  margin-bottom: 65px;
 
   @media (min-width: ${(props) => props.theme.breakpoints.l}) {
     padding: 0 100px;
     max-width: ${(props) => `${props.cap}px`};
-    margin-bottom: 120px;
   }
-
-  /* @media (max-width: ${(props) => props.theme.breakpoints.md}) {
-    overflow: hidden;
-  } */
 `;
 
 export const SectionBg = styled.div`
