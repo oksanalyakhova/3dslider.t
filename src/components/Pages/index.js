@@ -60,7 +60,7 @@ const PageLayout = (props) => {
               )
             );
           default:
-            return <></>;
+            return null;
         }
       })}
     </div>
