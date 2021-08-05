@@ -1,8 +1,8 @@
-import React, { createContext, useState } from 'react'
-import i18n from '../../config/i18n'
-import { useSessionStorage } from 'react-use'
+import React, { createContext, useState } from 'react';
+import i18n from '../../config/i18n';
+import { useSessionStorage } from 'react-use';
 
-const LocaleContext = createContext()
+const LocaleContext = createContext();
 
 export const LocaleProvider = ({ children, locale }) => {
   const [selectedLocale, setSelectedLocale] = useSessionStorage(
