@@ -1,7 +1,7 @@
 import React from 'react';
 /* Elements Decoration Icons */
 
-const AluproteckIcons = ({ type }) => {
+const GlobalIcons = ({ type }) => {
   return type === 'cross' ? (
     <svg
       width='15'
@@ -50,8 +50,8 @@ const AluproteckIcons = ({ type }) => {
   );
 };
 
-AluproteckIcons.propTypes = {};
+GlobalIcons.propTypes = {};
 
-AluproteckIcons.defaultProps = {};
+GlobalIcons.defaultProps = {};
 
-export default AluproteckIcons;
+export default GlobalIcons;

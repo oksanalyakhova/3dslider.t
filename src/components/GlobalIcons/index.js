@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 /* Elements Decoration Icons */
 
-const AluproteckIcons = ({ type }) => {
+const GlobalIcons = ({ type }) => {
   return type === 'header-logo' ? (
     <svg
       width="258"
@@ -325,8 +325,8 @@ const AluproteckIcons = ({ type }) => {
   );
 };
 
-AluproteckIcons.propTypes = {};
+GlobalIcons.propTypes = {};
 
-AluproteckIcons.defaultProps = {};
+GlobalIcons.defaultProps = {};
 
-export default AluproteckIcons;
+export default GlobalIcons;

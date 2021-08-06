@@ -40,8 +40,8 @@ export const ContainerStyled = styled.section`
     max-width: ${(props) => `calc(${props.cap}px - 300px)`};
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.l}) {
+  @media (min-width: ${(props) => props.theme.breakpoints.l}) {
     width: 100%;
-    max-width: ${props => `${props.cap}px`};
+    max-width: ${(props) => `${props.cap}px`};
   }
 `;

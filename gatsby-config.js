@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.aluproteck.ca`,
+        siteUrl: `#`,
       },
     },
     'gatsby-plugin-sitemap',

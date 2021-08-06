@@ -5,7 +5,7 @@ import { useDeviceDetect } from '../../../hooks/useDeviceDetect';
 import { useOutsideClick } from '../../../hooks/useOutsideClick';
 import getRichText from '../../../utils/functions/getRichText';
 import PlusMinus from 'components/UI/PlusMinus';
-import AluproteckIcons from 'components/AluproteckIcons/AluproteckIcons';
+import GlobalIcons from 'components/GlobalIcons/GlobalIcons';
 import {
   TooltipWrapper,
   TooltipButton,
@@ -57,7 +57,7 @@ const ThreeDTooltip = ({ ctaText, popupBody }) => {
           {ctaText && ctaText}
           {isActive && width < 960 && (
             <IconCross>
-              <AluproteckIcons type="cross" />
+              <GlobalIcons type="cross" />
             </IconCross>
           )}
         </TooltipButtonTypography>

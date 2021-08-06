@@ -7,7 +7,7 @@ import hexToRgba from 'hex-to-rgba';
 import gsap from 'gsap';
 import ThreeDTooltip from './ThreeDTooltip';
 import ThreeDSlide from './ThreeDSlide';
-import AluproteckIcons from 'components/AluproteckIcons/AluproteckIcons';
+import GlobalIcons from 'components/GlobalIcons/GlobalIcons';
 
 import {
   SliderHeader,
@@ -78,7 +78,7 @@ const ThreeDSlider = ({ title, cta, popup, steps, show }) => {
       aria-disabled={currentSlide === 0}
       type='button'
     >
-      <AluproteckIcons className='next-slick-arrow__icon' type='prevArrow' />
+      <GlobalIcons className='next-slick-arrow__icon' type='prevArrow' />
     </SampleArrow>
   );
 
@@ -90,7 +90,7 @@ const ThreeDSlider = ({ title, cta, popup, steps, show }) => {
       aria-disabled={currentSlide === slideCount - 1}
       type='button'
     >
-      <AluproteckIcons className='next-slick-arrow__icon' type='nextArrow' />
+      <GlobalIcons className='next-slick-arrow__icon' type='nextArrow' />
     </SampleArrow>
   );
 
