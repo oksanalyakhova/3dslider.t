@@ -12,14 +12,10 @@ import {
 import SectionTitle from 'components/UI/SectionTitle';
 
 const ThreeDSliderModule = ({ component }) => {
-  const {
-    title,
-    secondaryTitle,
-    ThreeDSliderBody,
-    cta,
-    popupBody,
-    steps,
-  } = component;
+  const { title, secondaryTitle, ThreeDSliderBody, cta, popupBody, steps } =
+    component;
+
+  console.log(component);
 
   const [show, setShow] = useState(false);
   const [ref, inView] = useInView({
