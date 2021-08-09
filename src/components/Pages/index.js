@@ -4,11 +4,8 @@ import ThreeDSliderModule from 'components/ThreeDSliderModule';
 import HeaderContext from 'context/HeaderProvider';
 
 const PageLayout = (props) => {
-  const {
-    setLocalePageContext,
-    setSelectedLocale,
-    selectedLocale,
-  } = useContext(LocaleContext);
+  const { setLocalePageContext, setSelectedLocale, selectedLocale } =
+    useContext(LocaleContext);
   const { setDarkHeader } = useContext(HeaderContext);
 
   const {
@@ -54,6 +51,7 @@ const PageLayout = (props) => {
       {node?.modules?.map((component) => {
         switch (component.__typename) {
           case 'Contentful3DSliderModule':
+            console.log(component);
             return (
               component && (
                 <ThreeDSliderModule key={component.id} component={component} />
