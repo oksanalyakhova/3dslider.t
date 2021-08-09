@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import uuid from 'react-uuid';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import loadable from '@loadable/component';
@@ -155,7 +156,7 @@ const ThreeDSlider = ({ title, cta, popup, steps, show }) => {
         {steps && (
           <Slider {...sliderSettings}>
             {steps.map((step) => (
-              <ThreeDSlide key={step?.contentful_id} slide={step} />
+              <ThreeDSlide key={uuid()} slide={step} />
             ))}
           </Slider>
         )}
