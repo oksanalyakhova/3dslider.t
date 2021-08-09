@@ -79,14 +79,6 @@ module.exports = {
         context: path.join(__dirname, 'src/context'),
         config: path.join(__dirname, 'config'),
       },
-      // },
-      // {
-      //   resolve: `gatsby-source-contentful`,
-      //   options: {
-      //     spaceId: process.env.CONTENTFUL_SPACE_ID,
-      //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      //     host: process.env.CONTENTFUL_CONTENT_CONTEXT_URL,
-      //   },
     },
     'gatsby-plugin-material-ui',
     'gatsby-plugin-styled-components',

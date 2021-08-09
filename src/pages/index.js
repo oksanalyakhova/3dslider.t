@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import PageLayout from '../components/Pages';
 import { useStaticQuery, graphql } from 'gatsby';
-import ThreeDSliderModule from 'components/ThreeDSliderModule';
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -29,9 +29,7 @@ const Index = () => {
       }
     }
   `);
-
-  const component = data?.allFile?.edges[0]?.node?.childDataJson;
-  return <ThreeDSliderModule component={component} />;
+  return <PageLayout {...data} />;
 };
 
 export default Index;
