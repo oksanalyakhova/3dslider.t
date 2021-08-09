@@ -1,4 +1,5 @@
 import React, { useEffect, useContext } from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import LocaleContext from 'context/LocaleProvider';
 import ThreeDSliderModule from 'components/ThreeDSliderModule';
 import HeaderContext from 'context/HeaderProvider';
@@ -47,21 +48,46 @@ const PageLayout = (props) => {
   ]);
 
   return (
-    <div style={{ minHeight: '700px', margin: 'auto 0' }}>
-      {node?.modules?.map((component) => {
-        switch (component.__typename) {
-          case 'Contentful3DSliderModule':
-            console.log(component);
-            return (
-              component && (
-                <ThreeDSliderModule key={component.id} component={component} />
-              )
-            );
-          default:
-            return null;
+    <StaticQuery
+      query={graphql`
+        query SliderQuery {
+          allSliderJson {
+            edges {
+              node {
+              id
+              ThreeDSliderBody: body
+              cta
+              title
+              secondaryTitle
+              popupBody
+              steps {
+                body
+                hexColor
+                minutes
+                minutesCaption
+                title
+              }
+            }
+          }
         }
-      })}
-    </div>
+      `}
+      render={(data) => <ThreeDSliderModule key={data.id} component={data} />}
+    />
+    // <div style={{ minHeight: '700px', margin: 'auto 0' }}>
+    //   {node?.modules?.map((component) => {
+    //     switch (component.__typename) {
+    //       case 'Contentful3DSliderModule':
+    //         console.log(component);
+    //         return (
+    //           component && (
+    //             <ThreeDSliderModule key={component.id} component={component} />
+    //           )
+    //         );
+    //       default:
+    //         return null;
+    //     }
+    //   })}
+    // </div>
   );
 };
 
