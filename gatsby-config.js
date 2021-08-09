@@ -1,7 +1,3 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
 const path = require('path');
 
 const website = require('./config/website');
@@ -31,21 +27,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     `gatsby-plugin-smoothscroll`,
-    {
-      resolve: `gatsby-plugin-env-variables`,
-      options: {
-        allowList: [
-          'CONTENTFUL_SPACE_ID',
-          'CONTENTFUL_ACCESS_TOKEN',
-          'CONTENTFUL_CONTENT_CONTEXT_URL',
-          'GATSBY_CONTENTFUL_SPACE_ID',
-          'GATSBY_CONTENTFUL_ACCESS_TOKEN',
-          'GATSBY_CONTENTFUL_CONTENT_CONTEXT_URL',
-          'GATSBY_GOOGLE_API_KEY',
-          'GOOGLE_API_KEY',
-        ],
-      },
-    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
