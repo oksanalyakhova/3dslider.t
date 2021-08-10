@@ -4,11 +4,12 @@ import Typography from 'components/UI/Typography';
 export const ThreeDWrapper = styled.div`
   position: relative;
   z-index: 1;
-  margin: 0 auto;
+  margin: 30px auto;
   width: 100%;
   color: ${(props) => props.theme.colors.white};
 
   @media (min-width: ${(props) => props.theme.breakpoints.l}) {
+    margin: 130px auto;
     padding: 0 100px;
     max-width: ${(props) => `${props.cap}px`};
   }
