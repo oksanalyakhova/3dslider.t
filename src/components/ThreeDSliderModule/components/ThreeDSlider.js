@@ -172,6 +172,7 @@ const ThreeDSlider = ({ title, cta, popup, steps, show }) => {
                 shadow-intensity="0"
                 camera-controls
                 disable-zoom
+                data-js-focus-visible
                 interaction-prompt="none"
                 camera-orbit="35deg 55deg"
                 ar-modes="webxr scene-viewer quick-look"
