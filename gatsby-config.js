@@ -1,7 +1,3 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
 const path = require('path');
 
 const website = require('./config/website');
@@ -31,21 +27,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     `gatsby-plugin-smoothscroll`,
-    {
-      resolve: `gatsby-plugin-env-variables`,
-      options: {
-        allowList: [
-          'CONTENTFUL_SPACE_ID',
-          'CONTENTFUL_ACCESS_TOKEN',
-          'CONTENTFUL_CONTENT_CONTEXT_URL',
-          'GATSBY_CONTENTFUL_SPACE_ID',
-          'GATSBY_CONTENTFUL_ACCESS_TOKEN',
-          'GATSBY_CONTENTFUL_CONTENT_CONTEXT_URL',
-          'GATSBY_GOOGLE_API_KEY',
-          'GOOGLE_API_KEY',
-        ],
-      },
-    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -80,18 +61,18 @@ module.exports = {
         config: path.join(__dirname, 'config'),
       },
     },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-        host: process.env.CONTENTFUL_CONTENT_CONTEXT_URL,
-      },
-    },
     'gatsby-plugin-material-ui',
     'gatsby-plugin-styled-components',
     // Must be placed at the end
     // 'gatsby-plugin-offline',
     'gatsby-plugin-meta-redirect',
+    'gatsby-transformer-json',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+      },
+    },
   ],
 };

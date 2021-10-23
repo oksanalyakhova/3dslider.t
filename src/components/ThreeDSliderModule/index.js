@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useInView } from 'react-intersection-observer';
 import Container from 'components/Container';
+import SectionTitle from 'components/UI/SectionTitle';
 import ThreeDSlider from './components/ThreeDSlider';
 import {
   ThreeDWrapper,
@@ -9,17 +10,10 @@ import {
   InformationContainer,
   BodyTypography,
 } from './styles';
-import SectionTitle from 'components/UI/SectionTitle';
 
 const ThreeDSliderModule = ({ component }) => {
-  const {
-    title,
-    secondaryTitle,
-    ThreeDSliderBody,
-    cta,
-    popupBody,
-    steps,
-  } = component;
+  const { title, secondaryTitle, ThreeDSliderBody, cta, popupBody, steps } =
+    component;
 
   const [show, setShow] = useState(false);
   const [ref, inView] = useInView({

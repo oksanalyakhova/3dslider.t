@@ -11,8 +11,6 @@ import {
 } from './styles';
 
 const ThreeDSlide = ({ slide }) => {
-  const body = getRichText(slide?.body);
-
   return (
     <Slide className="slide">
       {slide?.hexColor && (
@@ -23,8 +21,10 @@ const ThreeDSlide = ({ slide }) => {
           {slide?.title}
         </SlideTitle>
       )}
-      {slide?.body && <SlideBody className="slide__body">{body}</SlideBody>}
-      {slide?.inutesCaption && (
+      {slide?.body && (
+        <SlideBody className="slide__body">{slide?.body}</SlideBody>
+      )}
+      {slide?.minutesCaption && (
         <SlideMinutesCaption
           className="slide__minutes-caption"
           elementTheme="bold"

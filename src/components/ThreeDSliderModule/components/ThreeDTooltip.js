@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useWindowSize } from 'react-use';
 import { useDeviceDetect } from '../../../hooks/useDeviceDetect';
 import { useOutsideClick } from '../../../hooks/useOutsideClick';
-import getRichText from '../../../utils/functions/getRichText';
 import PlusMinus from 'components/UI/PlusMinus';
 import GlobalIcons from 'components/GlobalIcons/GlobalIcons';
 import {
@@ -20,8 +19,6 @@ const ThreeDTooltip = ({ ctaText, popupBody }) => {
 
   const tooltipRef = useRef();
   const [isActive, setIsActive] = useState(false);
-
-  const body = getRichText(popupBody);
 
   const ToggleTooltip = () => {
     setIsActive(!isActive);
@@ -64,7 +61,7 @@ const ThreeDTooltip = ({ ctaText, popupBody }) => {
       </TooltipButton>
       {isActive && (
         <TooltipBody className={isActive && 'is-visible'} isVisible={isActive}>
-          {body}
+          {popupBody}
         </TooltipBody>
       )}
     </TooltipWrapper>
@@ -73,12 +70,12 @@ const ThreeDTooltip = ({ ctaText, popupBody }) => {
 
 ThreeDTooltip.propTypes = {
   ctaText: PropTypes.string.isRequired,
-  popupBody: PropTypes.object.isRequired,
+  popupBody: PropTypes.string.isRequired,
 };
 
 ThreeDTooltip.defaultProps = {
   ctaText: '',
-  popupBody: {},
+  popupBody: '',
 };
 
 export default ThreeDTooltip;

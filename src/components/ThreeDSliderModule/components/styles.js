@@ -40,7 +40,7 @@ export const SliderBody = styled.div`
 
 export const TooltipWrapper = styled.div`
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
   @media (min-width: ${(props) => props.theme.breakpoints.md}) {
     width: 372px;
@@ -97,10 +97,11 @@ export const TooltipButtonTypography = styled(Typography)`
   }
 `;
 
-export const IconCross = styled.div`
+export const IconCross = styled.span`
   position: absolute;
   top: -1px;
   right: 0;
+  display: block;
 `;
 
 export const TooltipBody = styled.div`
@@ -268,6 +269,7 @@ export const SampleArrow = styled.div`
 
 export const SampleDots = styled.ul`
   bottom: -100px;
+  z-index: 1;
   display: flex;
   flex-wrap: nowrap;
   transform: translateX(${(props) => props.translate}px);

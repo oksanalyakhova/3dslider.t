@@ -29,7 +29,6 @@ const theme = {
     grey_6: '#CCCCCC',
     white: '#ffffff',
     darkgrey: '#030302',
-    // green: '#23D6A8',
     green: '#28E8A9',
     secondarygreen: 'rgba(107, 224, 171, 0.6)',
     lightgreen: '#DFFCF2',
