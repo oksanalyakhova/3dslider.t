@@ -1,0 +1,44 @@
+{
+  "ThreeDSliderBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non.",
+  "cta": "DO YOU NEED LOREM IPSUM?",
+  "title": "Our Lorem",
+  "secondaryTitle": "Finish",
+  "popupBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.",
+  "steps": [
+    {
+      "body": "(20 microns) 310: AA-M12-C22-A31 CL II = (0.0004)",
+      "hexColor": "#FFFFFF",
+      "minutes": "0:02 mins",
+      "minutesCaption": "IMMERSION TIME",
+      "title": "Clear"
+    },
+    {
+      "body": "(15 microns) 310: AA-M12-C22-A31 CL II = (0.0004)",
+      "hexColor": "#F7E7CE",
+      "minutes": "0:06 mins",
+      "minutesCaption": "IMMERSION TIME",
+      "title": "Champagne"
+    },
+    {
+      "body": "(13 microns) 310: AA-M12-C22-A31 CL II = (0.0004)",
+      "hexColor": "#c5ab84",
+      "minutes": "0:02 mins",
+      "minutesCaption": "IMMERSION TIME",
+      "title": "Light Bronze"
+    },
+    {
+      "body": "(20 microns) 310: AA-M12-C22-A31 CL II = (0.0004)",
+      "hexColor": "#b08d57",
+      "minutes": "0:02 mins",
+      "minutesCaption": "IMMERSION TIME",
+      "title": "Bronze"
+    },
+    {
+      "body": "(30 microns) 310: AA-M12-C22-A31 CL II = (0.0004)",
+      "hexColor": "#000000",
+      "minutes": "0:02 mins",
+      "minutesCaption": "IMMERSION TIME",
+      "title": "Black"
+    }
+  ]
+}
